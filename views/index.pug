@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  form(action='/setTodo', method='POST')
+    p
+      | Add A New Todo: 
+      input(type='text', name='todo', value='')
+   
+    input(type='submit', value='Submit')
